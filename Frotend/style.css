@@ -1,0 +1,128 @@
+/* Estilos Generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #444;
+}
+
+/* Estilo para los formularios */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  max-width: 400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Input fields */
+input {
+  margin: 10px 0;
+  padding: 12px;
+  width: 80%;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Estilo para botones */
+button {
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Estilo para las listas */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #fff;
+  margin: 5px 0;
+  padding: 12px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+/* Estilos del contenedor principal */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Títulos */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.4em;
+  color: #333;
+}
+
+/* Espaciado entre formularios */
+form + form {
+  margin-top: 30px;
+}
+
+/* Mensajes de éxito y error */
+.alert {
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+.alert.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+  

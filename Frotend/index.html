@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión Universitaria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gestión Universitaria</h1>
+  
+  <!-- Formulario de registro de estudiante -->
+  <h2>Registrar Estudiante</h2>
+  <form id="formEstudiante">
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <input type="text" id="apellido" placeholder="Apellido" required>
+    <input type="email" id="email" placeholder="Correo electrónico" required>
+    <button id="submit">Registrar</button>
+</form>
+
+  <!-- Formulario de registro de profesor -->
+  <h2>Registrar Profesor</h2>
+  <form id="formProfesor">
+    <input type="text" id="nombreProfesor" placeholder="Nombre del Profesor" required>
+    <input type="email" id="emailProfesor" placeholder="Correo del Profesor" required>
+    <button id="submit">Registrar Profesor</button>
+  </form>
+
+  <!-- Formulario de registro de asignatura -->
+  <h2>Registrar Asignatura</h2>
+  <form id="formAsignatura">
+    <input type="text" id="nombreAsignatura" placeholder="Nombre de la Asignatura" required>
+    <input type="text" id="codigoAsignatura" placeholder="Código de la Asignatura" required>
+    <button id="submit">Registrar Asignatura</button>
+  </form>
+
+  <!-- Formulario de asignación de profesor a asignatura -->
+  <h2>Asignar Profesor a Asignatura</h2>
+  <form id="formProfesorAsignatura">
+    <select id="profesorSelect">
+      <!-- Se llenará dinámicamente con los profesores -->
+    </select>
+    <select id="asignaturaSelect">
+      <!-- Se llenará dinámicamente con las asignaturas -->
+    </select>
+    <input type="text" id="grupo" placeholder="Grupo" required>
+    <input type="text" id="horario" placeholder="Horario" required>
+    <button type="submit">Asignar</button>
+  </form>
+
+  <!-- Formulario de inscripción de estudiante a asignatura -->
+  <h2>Inscribir Estudiante a Asignatura</h2>
+  <form id="formInscripcion">
+    <select id="estudianteSelect">
+      <!-- Se llenará dinámicamente con los estudiantes -->
+    </select>
+    <select id="asignaturaInscripcionSelect">
+      <!-- Se llenará dinámicamente con las asignaturas -->
+    </select>
+    <select id="profesorInscripcionSelect">
+      <!-- Se llenará dinámicamente con los profesores -->
+    </select>
+    <input type="text" id="grupoInscripcion" placeholder="Grupo" required>
+    <input type="number" id="nota1" placeholder="Nota 1" required>
+    <input type="number" id="nota2" placeholder="Nota 2" required>
+    <input type="number" id="nota3" placeholder="Nota 3" required>
+    <button type="submit">Inscribir Estudiante</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- Formulario para asignar asignaturas a profesores -->
+<h2>Asignar Asignatura a Profesor</h2>
+<form id="formAsignacionProfesor">
+  <select id="idProfesor" required>
+    <option value="" disabled selected>Seleccione Profesor</option>
+    <!-- Opciones de profesores serán cargadas dinámicamente -->
+  </select>
+  <select id="idAsignatura" required>
+    <option value="" disabled selected>Seleccione Asignatura</option>
+    <!-- Opciones de asignaturas serán cargadas dinámicamente -->
+  </select>
+  <input type="text" id="grupo" placeholder="Número de Grupo" required>
+  <input type="text" id="horario" placeholder="Horario" required>
+  <button type="submit">Asignar</button>
+</form>
